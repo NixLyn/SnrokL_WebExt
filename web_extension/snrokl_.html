@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snrokl_.css">
+    <title>NixLyn</title>
+</head>
+
+<body>
+    <nav>
+        <div class="header-lines">
+            <!-- HEADER -->
+            <h1>NixLyn_GPT</h1>
+        </div>
+
+            <!-- SnrokL-Node-Connection -->
+        <div  id="node-connection">
+            <h4>Status:</h4>
+            <input class="conn-stat" type="text" name="connection-status" value="NO-CONNECTION" />
+        </div>
+
+        <div class="conn-switch">
+            <!-- CONN_SWITCH -->
+            <a style="background-color: chartreuse;" id="on_switch">ON</a>
+            <a style="background-color: red;" id="off_switch">OFF</a>
+        </div>
+
+    </nav>
+
+
+    <section class="main-sect">
+        <div class="side-bar">
+            <div class="side-opts">
+                <div class="opt_0" id="run-snrokl">
+                   <input type="button" value="Run SnorkL {rules.txt} {vsbr}" />
+                </div>
+                <div class="opt_0" id="get-stack">
+                    <input type="button" value="Get-Stack {DATA}" />
+                </div>
+                <div class="opt_0" id="view-rules">
+                    <input type="button" value="View-Rules" />
+
+                </div>
+                <div class="opt_0" id="live-stream">
+                    <input type="button" value="Live-Stream {all}" />
+                </div>
+                <div class='opt_0' id='update-rules'>
+                    <input type="button" value="UPDATE" />
+                </div>
+            </div>
+            
+        </div>
+        <div class="rules-view">
+
+
+        </div>
+        <div class="text-term">
+            <div>
+                <!-- Web-Term -->
+                <div class="text-term-header">
+                    <!-- h5>Latest Returned Data: </h5 -->
+                    <input type="text" name="data-returned" value="" hidden>
+                    <!-- Display Data -->
+                    <h5>Back_Log:</h5>
+                    <div id="back-log" class="back-log">
+                    </div>
+                </div>
+            </div>
+            <div class="send-cmds" >
+                <!-- TRANSMIT_TO -->
+                <input type="text" id="text-input" name="cmd-to-send" value="cmd$ ls -la " />
+                <input type="button" name="send-button" id="snd-btn" value="Send Cmd" hidden />
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="snrokl_.js"></script>
+
+</html>

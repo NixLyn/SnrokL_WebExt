@@ -1,0 +1,161 @@
+html{
+    top: 0;
+    left: 0;
+    margin: 0 0;
+    padding: 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    margin: 0 0;
+    height: 10%;
+    background-color: rgb(25, 0, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body{
+    background-color: red;
+    top: 0;
+    left: 0;
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+
+
+
+#node-connection{
+    display: flex;
+}
+
+.conn-stat{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 50%;
+    height: 20%;
+}
+
+.conn-switch{
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.main-sect{
+    top: 0;
+    margin: -22px 0;
+    padding: 0 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 90vh;
+
+}
+
+.text-term{
+    width: 85%;
+}
+
+.side-bar {
+    position: absolute;
+    height: 90%;
+    width: 20%;
+    background-color: aqua;
+    right: 0;
+}
+.side-opts{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.side-opts div{
+    width: 95%;
+    height: 35px;
+}
+.side-opts div input{
+    width: 100%;
+    height: 100%;
+}
+
+.back-log {
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #00ff00;
+    overflow: auto;
+    
+}
+
+.text-term-header{
+
+    top: 0;
+    margin: 0 0;
+    background-color: #0020003f;
+    width: 100%;
+
+}
+
+
+.send-cmds{
+    top: 0;
+    margin: 0 0;
+    background-color: #1a691a00;
+    width: 100%;
+    height: 10%;
+    padding-bottom: 0vh;
+}
+
+
+#text-input {
+    background-color: #1a691a00;
+    margin-left: 10px;
+    width: 85%;
+    color: #00ff00;
+}
+
+
+.opt_0{
+    cursor: pointer;
+    background-color: #00ff00;
+    
+}
+
+.opt_0:hover{
+    background-color: #ffffff;
+}
+
+
+.rules-view{
+    display: none;
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    background-color: #000000;
+    color: #00ff00;
+}
+
+#update-rules{
+    display: none;
+    cursor: pointer;
+    background-color: #00ff00;
+    width: 95%;
+    height: 5vh;
+}
+
+#update-rules:hover{
+    background-color: #ffffff;
+}
+
+
+
